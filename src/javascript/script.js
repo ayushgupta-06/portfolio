@@ -10,12 +10,11 @@ function hamBurgerFunc() {
     // logo
     logo.style.display = "none";
     // navbar
-    // navBar.style.border = "2px solid white";
     navBar.style.height = "fit-content";
     navBar.style.display = "block";
     navBar.style.backgroundColor = "#23b5b5";
     // hamburger
-    hamBurger.style.width = "10%";
+    hamBurger.style.width = "2em";
     hamBurger.style.display = "flex";
     hamBurger.style.position = "relative";
     hamBurger.style.left = "75%";
@@ -28,10 +27,14 @@ function hamBurgerFunc() {
     hamBurgerLine[1].style.position = "relative";
     hamBurgerLine[1].style.top = "10px";
     hamBurgerLine[1].style.backgroundColor = "#f2f2f2";
+    hamBurgerLine[1].style.width = "100%";
+    hamBurgerLine[1].style.height = ".1em";
     hamBurgerLine[2].style.transform = "rotate(-50deg)";
     hamBurgerLine[2].style.position = "relative";
-    hamBurgerLine[2].style.bottom = "12px";
+    hamBurgerLine[2].style.bottom = "13px";
     hamBurgerLine[2].style.backgroundColor = "#f2f2f2";
+    hamBurgerLine[2].style.width = "100%";
+    hamBurgerLine[2].style.backgroundColor = ".1em";
 
     // ul
     let ul = document.createElement("ul");
@@ -41,6 +44,11 @@ function hamBurgerFunc() {
     let aTag3 = document.createElement("a");
     let aTag4 = document.createElement("a");
     let aTag5 = document.createElement("a");
+    aTag1.setAttribute("href", "#main-container");
+    aTag2.setAttribute("href", "#about-container");
+    aTag3.setAttribute("href", "#");
+    aTag4.setAttribute("href", "#");
+    aTag5.setAttribute("href", "#");
     ul.appendChild(aTag1);
     ul.appendChild(aTag2);
     ul.appendChild(aTag3);
@@ -56,20 +64,12 @@ function hamBurgerFunc() {
     li3.className = "nav-li";
     li4.className = "nav-li";
     li5.className = "nav-li";
+
     aTag1.appendChild(li1);
     aTag2.appendChild(li2);
     aTag3.appendChild(li3);
     aTag4.appendChild(li4);
     aTag5.appendChild(li5);
-
-    aTag1.className = "nav-links";
-    aTag2.className = "nav-links";
-    aTag3.className = "nav-links";
-    aTag4.className = "nav-links";
-    aTag5.className = "nav-links";
-    aTag1.setAttribute("href", "#main-container");
-    aTag2.setAttribute("href", "#about-container");
-    let a = document.querySelectorAll(".nav-links");
     let li1Txt = document.createTextNode("HOME");
     let li2Txt = document.createTextNode("ABOUT");
     let li3Txt = document.createTextNode("SKILLS");
@@ -81,54 +81,18 @@ function hamBurgerFunc() {
     li3.appendChild(li3Txt);
     li4.appendChild(li4Txt);
     li5.appendChild(li5Txt);
-    // li1Txt.className = "li-txt";
-    // li2Txt.className = "li-txt";
-    // li3Txt.className = "li-txt";
-    // li4Txt.className = 'li-txt';
-    // li5Txt.className = "li-txt";
-    // let liTxt = document.querySelectorAll('.li-txt');
     // ul styling
-    // ul.style.border = '2px solid black';
-    ul.style.width = "95%";
+    ul.style.width = "100%";
     ul.style.height = "fit-content";
     ul.style.listStyle = "none";
     ul.style.position = "relative";
     // li styling
     for (let k = 0; k < li.length; k++) {
-      li[k].style.width = "100%";
+      li[k].style.width = "94%";
       li[k].style.height = "20px";
-      // li[k].style.border = '1px solid #f2f2f2';
       li[k].style.padding = "5px";
-      li[k].style.backgroundColor = "#23b5b5";
       li[k].style.color = "#f2f2f2";
       li[k].style.textAlign = "center";
-      li[k].style.fontSize = "12px";
-      li[k].style.fontFamily = "Oxygen,sans-serif";
-      li[k].addEventListener("click", linkClicked);
-      function linkClicked() {
-        logo.style.display = "block";
-        //navbar
-        navBar.style.display = "flex";
-        navBar.style.alignItems = "center";
-        navBar.style.justifyContent = "space-between";
-        navBar.style.height = "15vh";
-        navBar.style.backgroundColor = "#0c112b";
-        // navBar.style.border = "2px solid white";
-        //hamburger
-        hamBurger.style.position = "static";
-        hamBurger.style.width = "3em";
-        hamBurger.style.display = "block";
-        hamBurger.style.backgroundColor = "#23b5b5";
-
-        //hamburger line
-        for (let i = 0; i < hamBurgerLine.length; i++) {
-          hamBurgerLine[i].style.display = "block";
-          hamBurgerLine[i].style.position = "static";
-          hamBurgerLine[i].style.transform = "rotate(0deg)";
-          hamBurgerLine[i].style.backgroundColor = "#f2f2f2";
-        }
-        navBar.lastChild.remove();
-      }
     }
   } else {
     //logo
@@ -139,13 +103,11 @@ function hamBurgerFunc() {
     navBar.style.justifyContent = "space-between";
     navBar.style.height = "15vh";
     navBar.style.backgroundColor = "#0c112b";
-    // navBar.style.border = "2px solid white";
     //hamburger
     hamBurger.style.position = "static";
     hamBurger.style.width = "3em";
     hamBurger.style.display = "block";
     hamBurger.style.backgroundColor = "#23b5b5";
-
     //hamburger line
     for (let i = 0; i < hamBurgerLine.length; i++) {
       hamBurgerLine[i].style.display = "block";
@@ -154,77 +116,5 @@ function hamBurgerFunc() {
       hamBurgerLine[i].style.backgroundColor = "#f2f2f2";
     }
     navBar.lastChild.remove();
-    // for(let j=0; j<li.length; j++)
-    // {
-    //   li[j].style.display = 'none';
-    // }
   }
 }
-
-// typewriter effect
-// ES6 Class
-// class TypeWriter {
-//   constructor(txtElement, words, wait = 1500) {
-//     this.txtElement = txtElement;
-//     this.words = words;
-//     this.txt = "";
-//     this.wordIndex = 0;
-//     this.wait = parseInt(wait, 10);
-//     this.type();
-//     this.isDeleting = false;
-//   }
-
-//   type() {
-//     // Current index of word
-//     const current = this.wordIndex % this.words.length;
-//     // Get full text of current word
-//     const fullTxt = this.words[current];
-
-//     // Check if deleting
-//     if (this.isDeleting) {
-//       // Remove char
-//       this.txt = fullTxt.substring(0, this.txt.length - 1);
-//     } else {
-//       // Add char
-//       this.txt = fullTxt.substring(0, this.txt.length + 1);
-//     }
-
-//     // Insert txt into element
-//     this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-//     // Initial Type Speed
-//     let typeSpeed = 50;
-
-//     if (this.isDeleting) {
-//       typeSpeed /= 2;
-//     }
-
-//     // If word is complete
-//     if (!this.isDeleting && this.txt === fullTxt) {
-//       // Make pause at end
-//       typeSpeed = this.wait;
-//       // Set delete to true
-//       this.isDeleting = true;
-//     } else if (this.isDeleting && this.txt === "") {
-//       this.isDeleting = false;
-//       // Move to next word
-//       this.wordIndex++;
-//       // Pause before start typing
-//       typeSpeed = 500;
-//     }
-
-//     setTimeout(() => this.type(), typeSpeed);
-//   }
-// }
-
-// // Init On DOM Load
-// document.addEventListener("DOMContentLoaded", init);
-
-// // Init App
-// function init() {
-//   const txtElement = document.querySelector(".txt");
-//   const words = JSON.parse(txtElement.getAttribute("data-words"));
-//   const wait = txtElement.getAttribute("data-wait");
-//   // Init TypeWriter
-//   new TypeWriter(txtElement, words, wait);
-// }

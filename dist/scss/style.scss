@@ -1,5 +1,5 @@
 @import "mixin";
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oxygen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Oxygen&display=swap");
 @font-face {
   font-family: AmsterdamSign;
   src: url(../../dist/font/amsterdam-three-slant.ttf);
@@ -16,39 +16,33 @@
   color: #f2f2f2;
 }
 body {
-  @include border(white);
   background-color: #0c112b;
 }
 
 // Navigation bar
 #navbar-container {
-  // @include border(white);
-  width: 93vw;
+  width: 100vw;
   height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .logo::after{
-    // @include border(white);
+  .logo::after {
+    content: "AG";
+    width: fit-content;
+    height: fit-content;
     font-size: 1.5em;
     color: #23b5b5;
     font-family: "AmsterdamSign";
-    width: fit-content;
-    height: fit-content;
-    content: "AG";
   }
   .hamburger-menu {
-    // @include border(red);
     border-radius: 2px;
     background-color: #23b5b5;
     width: 3em;
     height: fit-content;
     padding: 0px 5px;
     .hamburger-menu-line {
-      // @include border(blue);
       width: 100%;
-      height: .1em;
+      height: 0.1em;
       margin: 0.7em 0px;
       background-color: #f2f2f2;
     }
@@ -56,21 +50,18 @@ body {
 }
 // Main section
 #main-container {
-  @include border(green);
- width: 93vw;
+  width: 100vw;
   height: fit-content;
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   .main-content {
-    @include border(yellow);
     width: 100%;
     height: 14em;
     display: flex;
     flex-direction: column;
     align-items: center;
-		justify-content: space-around;
+    justify-content: space-around;
     h1 {
-      @include border(blue);
       width: 6em;
       font-size: 2em;
       text-align: center;
@@ -80,58 +71,50 @@ body {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-      a {
-        // @include border(red);
-        font-family: "Oxygen",sans-serif;
-				padding: .5em 1.5em;
-        font-size: 1em;
-        color: #f2f2f2;
-				border-radius: 2px;
-				background-color: #23b5b5;
-      }
+    a {
+      font-family: "Oxygen", sans-serif;
+      padding: 0.5em 1.5em;
+      font-size: 1em;
+      color: #f2f2f2;
+      border-radius: 2px;
+      background-color: #23b5b5;
+    }
   }
-	.main-img{
-		// @include border(purple);
-    width:fit-content;
-		height: fit-content;
-		img{
-      // @include border(greenyellow);
-			width: 93vw;
-			height: auto;
-		}
-	}
-  
+  .main-img {
+    width: 100%;
+    height: fit-content;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 // About section
-#about-container{
-  // @include border(white);
-	 width: 93vw;
-	height: fit-content;
+#about-container {
+  width: 100%;
+  height: fit-content;
   position: relative;
-		top: 5em;
-	.about-content{
-		// @include border(green);
-		width: 100%;
-		height: fit-content;
-		h1{
-      // @include border(orange);
+  top: 5em;
+  .about-content {
+    width: 100%;
+    height: fit-content;
+    h1 {
       width: 100%;
-			font-size: 2.5em;
+      font-size: 2.5em;
       text-align: center;
       font-family: "Bakbak One";
       background: -webkit-linear-gradient(left, #23b5b5, #abacad);
       background-clip: text;
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent
-		}
-		p{
-      // @include border(blue);
+      -webkit-text-fill-color: transparent;
+    }
+    p {
       width: 100%;
-			font-size: 1em;
-			letter-spacing: .1em;
-			text-align: center;
-			color: #abacad;
-      font-family: "Oxygen",sans-serif;
-		}
-	}
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #abacad;
+      font-family: "Oxygen", sans-serif;
+    }
+  }
 }
