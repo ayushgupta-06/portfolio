@@ -240,6 +240,7 @@ body {
         .skill-limit {
           // border-top-left-radius: 1em;
           // border-bottom-left-radius: 1em;
+          font-family: "Oxygen",sans-serif;
           border-radius: 1em;
           display: flex;
           flex-direction: column;
@@ -252,6 +253,9 @@ body {
         }
       }
     }
+  }
+  .skills-img{
+    display: none;
   }
 }
 

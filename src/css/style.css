@@ -295,6 +295,7 @@ body {
 }
 
 #skills-container .skills-content .skills .skill-bar .skill-limit {
+  font-family: "Oxygen",sans-serif;
   border-radius: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,6 +315,10 @@ body {
   background-color: #23b5b5;
   -webkit-box-shadow: 0px 0px 10px #23b5b5;
           box-shadow: 0px 0px 10px #23b5b5;
+}
+
+#skills-container .skills-img {
+  display: none;
 }
 
 /* Animations */

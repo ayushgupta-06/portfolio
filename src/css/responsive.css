@@ -157,7 +157,14 @@
     color: #c5221f;
     box-shadow: 0px 0px 50px #c5221f;
   }
+  #main-container .main-img img{
+    width: 25em;
+    position: relative;
+    right: 1em;
+  }
   #about-container {
+    position: relative;
+    left: 1em;
     display: flex;
     justify-content: space-between;
   }
@@ -180,6 +187,36 @@
   #about-container .about-img img {
     width: 15em;
     height: 15em;
+  }
+  #skills-container{
+    width: 100vw;
+    display: flex !important;
+    /* border: 1px solid green; */
+    /* flex-direction: row; */
+  }
+  #skills-container .skills-content > h1{
+    width: 100%;
+    padding: 1em 0px;
+    /* border: 1px solid red; */
+  }
+  #skills-container .skills-content{
+    /* border: 1px solid white; */
+    width: 50%;
+  }
+  #skills-container .skills-content .skills{
+    padding: 1em;
+    width: 90%;
+    /* border: 1px solid white; */
+    align-items: flex-start;
+  }
+  #skills-container .skills-img{
+    display: flex;
+    align-items: flex-end;
+  /* display: block; */
+  }
+  #skills-container .skills-img img{
+      width: 30em;
+  height: auto;
   }
 }
 /* Laptops*/
@@ -236,6 +273,27 @@
    #about-container .about-img img{
      width: 25em;
      height: 25em;
+    }
+    /* #skills-container{
+      border: 1px solid goldenrod;
+    } */
+    #skills-container .skills-content .skills h1{
+      font-size: 1.3em;
+      padding: 5px;
+    }
+     #skills-container .skills-content > h1{
+       /* border: 1px solid red; */
+       text-align: left;
+       font-size: 4em;
+       height: fit-content;
+       width: 95%;
+       padding-left: .5em;
+     }
+    #skills-container .skills-img{
+      justify-content: center;
+    }
+   #skills-container .skills-img img{
+     width: 35em;
    }
 }
 /* LCD's */
@@ -273,6 +331,19 @@
      width: 30em;
      height: 30em;
    }
+   #skills-container .skills-content h1{
+     font-size: 6em;
+   }
+   #skills-container .skills-content .skills h1{
+     font-size: 2.5em;
+   }
+    #skills-container .skills-content{
+      position: relative;
+      left: 4em;
+    }
+    #skills-container .skills-img img{
+      width: 55em;
+    }
 }
 /* 4K */
 @media screen and (min-width:2560px){
@@ -309,4 +380,7 @@
      width: 30em;
      height: 30em;
    }
+     #skills-container .skills-img img{
+      width: 65em;
+    }
 }
