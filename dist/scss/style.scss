@@ -52,8 +52,8 @@ body {
       animation: hamburgerlineanime 1s ease-in;
     }
   }
-  .lilinks-container{
-   display: none;
+  .lilinks-container {
+    display: none;
   }
 }
 // Main section
@@ -92,15 +92,15 @@ body {
       background-color: #23b5b5;
       animation: mainbuttonanime 1s ease-in;
     }
-    .sociallinks-container{
+    .sociallinks-container {
       display: none;
     }
   }
   .main-img {
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     img {
-      width: 100%;
+      width: 100vw;
       height: auto;
       animation: mainimganime 1s ease-in;
     }
@@ -134,10 +134,127 @@ body {
       font-family: "Oxygen", sans-serif;
     }
   }
-  .about-img{
+  .about-img {
     display: none;
   }
 }
+#skills-container {
+  // border: 1px solid white;
+  position: relative;
+  top: 10em;
+  width: 100vw;
+  height: fit-content;
+  .skills-content {
+    text-align: center;
+    // border: 1px solid salmon;
+    > h1 {
+      padding: 1em 0px;
+      width: 100%;
+      font-size: 2.5em;
+      text-align: center;
+      font-family: "Bakbak One";
+      background: -webkit-linear-gradient(left, #23b5b5, #abacad);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
+      // border: 1px solid blue;
+      h1{
+        color: #f2f2f2;
+        font-family: "Oxygen",sans-serif;
+        letter-spacing: .1em;
+        font-size: 1em;
+      }
+      // #html-h1 {
+      //   color: #dd4b25;
+      // }
+      // #css-h1 {
+      //   color: #254bdd;
+      // }
+      // #javascript-h1 {
+      //   color: #edd718;
+      // }
+      // #bootstrap-h1 {
+      //   color: #7010ef;
+      // }
+      // #tailwind-h1 {
+      //   color: #36b7f0;
+      // }
+      // #sass-h1 {
+      //   color: #c76494;
+      // }
+      .skill-bar {
+        // border: 1px solid white;
+        width: 95%;
+        height: 1.3em;
+        border-radius: 1em;
+        background-color: #f2f2f2;
+
+        #skill-limit-1 {
+          // background-color: #dd4b25;
+          width: 90%;
+          height: 100%;
+          // box-shadow: 0px 0px 10px #dd4b25;
+          animation: skilllimit1anime 1s ease-in;
+        }
+        #skill-limit-2 {
+          // background-color: #254bdd;
+          width: 80%;
+          height: 100%;
+          // box-shadow: 0px 0px 10px #254bdd;
+          animation: skilllimit2anime 1s ease-in;
+        }
+        #skill-limit-3 {
+          // background-color: #edd718;
+          width: 60%;
+          height: 100%;
+          // box-shadow: 0px 0px 10px #edd718;
+          animation: skilllimit3anime 1s ease-in;
+        }
+        #skill-limit-4 {
+          // background-color: #7010ef;
+          width: 40%;
+          height: 100%;
+          // box-shadow: 0px 0px 10px #7010ef;
+          animation: skilllimit4anime 1s ease-in;
+        }
+        #skill-limit-5 {
+          // background-color: #36b7f0;
+          width: 75%;
+          height: 100%;
+          // box-shadow: 0px 0px 10px #36b7f0;
+          animation: skilllimit5anime 1s ease-in;
+        }
+        #skill-limit-6 {
+          // background-color: #c76494;
+          width: 80%;
+          height: 100%;
+          // box-shadow: 0px 0px 10px #c76494;
+          animation: skilllimit6anime 1s ease-in;
+        }
+        .skill-limit {
+          // border-top-left-radius: 1em;
+          // border-bottom-left-radius: 1em;
+          border-radius: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          padding-right: 5px;
+          color: #f2f2f2;
+          background-color: #23b5b5;
+          box-shadow: 0px 0px 10px #23b5b5;
+        }
+      }
+    }
+  }
+}
+
 /* Animations */
 
 @keyframes logoanime {
@@ -187,5 +304,53 @@ body {
   }
   to {
     filter: brightness(1);
+  }
+}
+@keyframes skilllimit1anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+@keyframes skilllimit2anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes skilllimit3anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+@keyframes skilllimit4anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+@keyframes skilllimit5anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes skilllimit6anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
   }
 }

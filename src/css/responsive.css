@@ -198,6 +198,7 @@
 }
 /* Laptop L*/
 @media screen and (min-width:1326px) {
+  
   #navbar-container .logo::after{
     position: relative;
     left: 2em;
@@ -279,10 +280,10 @@
   font-size: 3.5em;
   }
   #navbar-container .lilinks-container ul{
-    left: 40%;
+    left: 70%;
   }
   #navbar-container .lilinks-container ul a li{
-    font-size: 2em;
+    font-size: 1.7em;
   }
   #main-container .main-img img{
     width: 60em;

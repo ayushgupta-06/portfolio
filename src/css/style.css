@@ -144,14 +144,16 @@ body {
 }
 
 #main-container .main-img {
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
 #main-container .main-img img {
-  width: 100%;
+  width: 100vw;
   height: auto;
   -webkit-animation: mainimganime 1s ease-in;
           animation: mainimganime 1s ease-in;
@@ -195,6 +197,123 @@ body {
 
 #about-container .about-img {
   display: none;
+}
+
+#skills-container {
+  position: relative;
+  top: 10em;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#skills-container .skills-content {
+  text-align: center;
+}
+
+#skills-container .skills-content > h1 {
+  padding: 1em 0px;
+  width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Bakbak One";
+  background: -webkit-linear-gradient(left, #23b5b5, #abacad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#skills-container .skills-content .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+}
+
+#skills-container .skills-content .skills h1 {
+  color: #f2f2f2;
+  font-family: "Oxygen",sans-serif;
+  letter-spacing: .1em;
+  font-size: 1em;
+}
+
+#skills-container .skills-content .skills .skill-bar {
+  width: 95%;
+  height: 1.3em;
+  border-radius: 1em;
+  background-color: #f2f2f2;
+}
+
+#skills-container .skills-content .skills .skill-bar #skill-limit-1 {
+  width: 90%;
+  height: 100%;
+  -webkit-animation: skilllimit1anime 1s ease-in;
+          animation: skilllimit1anime 1s ease-in;
+}
+
+#skills-container .skills-content .skills .skill-bar #skill-limit-2 {
+  width: 80%;
+  height: 100%;
+  -webkit-animation: skilllimit2anime 1s ease-in;
+          animation: skilllimit2anime 1s ease-in;
+}
+
+#skills-container .skills-content .skills .skill-bar #skill-limit-3 {
+  width: 60%;
+  height: 100%;
+  -webkit-animation: skilllimit3anime 1s ease-in;
+          animation: skilllimit3anime 1s ease-in;
+}
+
+#skills-container .skills-content .skills .skill-bar #skill-limit-4 {
+  width: 40%;
+  height: 100%;
+  -webkit-animation: skilllimit4anime 1s ease-in;
+          animation: skilllimit4anime 1s ease-in;
+}
+
+#skills-container .skills-content .skills .skill-bar #skill-limit-5 {
+  width: 75%;
+  height: 100%;
+  -webkit-animation: skilllimit5anime 1s ease-in;
+          animation: skilllimit5anime 1s ease-in;
+}
+
+#skills-container .skills-content .skills .skill-bar #skill-limit-6 {
+  width: 80%;
+  height: 100%;
+  -webkit-animation: skilllimit6anime 1s ease-in;
+          animation: skilllimit6anime 1s ease-in;
+}
+
+#skills-container .skills-content .skills .skill-bar .skill-limit {
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 5px;
+  color: #f2f2f2;
+  background-color: #23b5b5;
+  -webkit-box-shadow: 0px 0px 10px #23b5b5;
+          box-shadow: 0px 0px 10px #23b5b5;
 }
 
 /* Animations */
@@ -326,5 +445,113 @@ body {
   to {
     -webkit-filter: brightness(1);
             filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes skilllimit1anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes skilllimit1anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes skilllimit2anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes skilllimit2anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes skilllimit3anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes skilllimit3anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes skilllimit4anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes skilllimit4anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 40%;
+  }
+}
+
+@-webkit-keyframes skilllimit5anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes skilllimit5anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 75%;
+  }
+}
+
+@-webkit-keyframes skilllimit6anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes skilllimit6anime {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
   }
 }
