@@ -33,19 +33,27 @@ body {
     font-size: 1.5em;
     color: #23b5b5;
     font-family: "AmsterdamSign";
+    animation: logoanime 1s ease-in;
   }
+
   .hamburger-menu {
+    cursor: pointer;
     border-radius: 2px;
     background-color: #23b5b5;
     width: 3em;
     height: fit-content;
     padding: 0px 5px;
+    animation: hamburgeranime 1s ease-in;
     .hamburger-menu-line {
       width: 100%;
       height: 0.1em;
       margin: 0.7em 0px;
       background-color: #f2f2f2;
+      animation: hamburgerlineanime 1s ease-in;
     }
+  }
+  .lilinks-container{
+   display: none;
   }
 }
 // Main section
@@ -70,6 +78,10 @@ body {
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      animation: mainh1anime 1s ease-in;
+    }
+    .txt {
+      display: none;
     }
     a {
       font-family: "Oxygen", sans-serif;
@@ -78,6 +90,10 @@ body {
       color: #f2f2f2;
       border-radius: 2px;
       background-color: #23b5b5;
+      animation: mainbuttonanime 1s ease-in;
+    }
+    .sociallinks-container{
+      display: none;
     }
   }
   .main-img {
@@ -86,12 +102,13 @@ body {
     img {
       width: 100%;
       height: auto;
+      animation: mainimganime 1s ease-in;
     }
   }
 }
 // About section
 #about-container {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   position: relative;
   top: 5em;
@@ -116,5 +133,59 @@ body {
       color: #abacad;
       font-family: "Oxygen", sans-serif;
     }
+  }
+  .about-img{
+    display: none;
+  }
+}
+/* Animations */
+
+@keyframes logoanime {
+  from {
+    filter: brightness(50%);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+@keyframes hamburgeranime {
+  from {
+    filter: brightness(50%);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+
+@keyframes hamburgerlineanime {
+  from {
+    filter: brightness(50%);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+@keyframes mainh1anime {
+  from {
+    filter: brightness(50%);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+@keyframes mainbuttonanime {
+  from {
+    filter: brightness(50%);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+@keyframes mainimganime {
+  from {
+    filter: brightness(50%);
+  }
+  to {
+    filter: brightness(1);
   }
 }

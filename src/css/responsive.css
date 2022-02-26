@@ -1,0 +1,311 @@
+/* Small Phones */
+@media screen and (min-width: 320px) {
+  #navbar-container .logo::after {
+    content: "Ayush Gupta";
+  }
+}
+/* Medium Phones */
+@media screen and (min-width: 375px) {
+  #main-container .main-content h1 {
+    width: 10em;
+  }
+  #main-container .main-content .txt {
+    font-size: 1.2em;
+    color: #abacad;
+    font-family: "Oxygen", sans-serif;
+    display: inline-block;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) {
+  #navbar-container {
+    justify-content: center !important;
+  }
+  #navbar-container .logo::after{
+    font-size: 1.5em;
+  }
+  #navbar-container .hamburger-menu {
+    visibility: hidden;
+  }
+  #navbar-container .lilinks-container {
+    display: block;
+  }
+  #navbar-container .lilinks-container ul {
+    width: fit-content;
+    color: white;
+    display: flex;
+    list-style-type: none;
+  }
+  #navbar-container .lilinks-container ul a {
+    color: #abacad;
+    cursor: pointer;
+  }
+  #navbar-container .lilinks-container a li {
+    transition: transform 0.5s;
+    padding: 1em;
+    font-size: .7em;
+    font-weight: 600;
+  }
+  #navbar-container .lilinks-container a li:hover {
+    color: #23b5b5;
+    border-bottom: 1px solid #23b5b5;
+    transform: translateY(-10px);
+  }
+  #main-container {
+    align-items: center;
+    flex-direction: row;
+  }
+  #main-container .main-content {
+    padding: 1em;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #main-container .main-content h1 {
+    padding-left: 0.5em;
+    text-align: left;
+    font-size: 2.5em;
+  }
+  #main-container .main-content .txt {
+    display: flex;
+    align-items: center;
+    height: 1em;
+    padding: 0.5em 0px 0.5em 0.5em;
+    font-size: 1.2em;
+  }
+  #main-container .main-content a {
+    display: none;
+  }
+  #main-container .main-content .sociallinks-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+  }
+  #main-container .main-content .sociallinks-container .social-links {
+    cursor: pointer;
+    padding: 1em;
+  }
+  #main-container .main-content .sociallinks-container .social-links a{
+    font-family: "Oxygen", sans-serif;
+    padding: 0px 0px;
+    background-color: transparent;
+    display: block;
+  }
+  #main-container .main-content .sociallinks-container .social-links i {
+    border-radius: 40px;
+    padding: 0.5em;
+    color: #abacad;
+    font-size: 1.5em;
+    transition: all 1s;
+    animation: sociallinksanime 1s ease-in;
+  }
+  @keyframes sociallinksanime {
+    from {
+      filter: brightness(50%);
+    }
+    to {
+      filter: brightness(1);
+    }
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-instagram:hover {
+    background-color: #abacad;
+    border: 1px solid #d822a8;
+    color: #d822a8;
+    box-shadow: 0px 0px 50px #d822a8;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-twitter:hover {
+    background-color: #abacad;
+    border: 1px solid #5da9dd;
+    color: #5da9dd;
+    box-shadow: 0px 0px 50px #5da9dd;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-linkedin-in:hover {
+    background-color: #abacad;
+    border: 1px solid #0077b5;
+    color: #0077b5;
+    box-shadow: 0px 0px 50px #0077b5;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-github:hover {
+    background-color: #abacad;
+    border: 1px solid #1b1f23;
+    color: #1b1f23;
+    box-shadow: 0px 0px 50px #abacad;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-envelope:hover {
+    background-color: #abacad;
+    border: 1px solid #c5221f;
+    color: #c5221f;
+    box-shadow: 0px 0px 50px #c5221f;
+  }
+  #about-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #about-container .about-content {
+    height: fit-content;
+    width: 50%;
+    padding: 1em 1em 0px 1em;
+  }
+  #about-container .about-content h1 {
+    text-align: left;
+  }
+  #about-container .about-content p {
+    text-align: left;
+  }
+  #about-container .about-img {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+  }
+  #about-container .about-img img {
+    width: 15em;
+    height: 15em;
+  }
+}
+/* Laptops*/
+@media screen and (min-width: 1024px) {
+  #navbar-container {
+    justify-content: flex-start !important;
+  }
+  #navbar-container .logo::after{
+    position: relative;
+    left: 1.5em;
+  }
+  #navbar-container .lilinks-container ul {
+    position: relative;
+    left: 50%;
+  }
+}
+/* Laptop L*/
+@media screen and (min-width:1326px) {
+  #navbar-container .logo::after{
+    position: relative;
+    left: 2em;
+  font-size: 1.5em;
+  }
+  #navbar-container .lilinks-container ul{
+    left: 90%;
+  }
+  #navbar-container .lilinks-container ul a li{
+    font-weight: 600;
+    font-size: .8em;
+  }
+  #main-container .main-content h1{
+    font-size: 4em;
+  }
+  #main-container .main-content .txt{
+    font-size: 1.5em;
+  }
+   #main-container .main-content .sociallinks-container .social-links i{
+    font-size: 2em;
+  }
+  #main-container .main-img img{
+    width: 35em;
+  }
+  #about-container .about-content{
+    width: 40%;
+  }
+  #about-container .about-content h1{
+    font-size: 4em;
+  }
+  #about-container .about-content p{
+    font-size: 1.3em;
+    
+  }
+   #about-container .about-img img{
+     width: 25em;
+     height: 25em;
+   }
+}
+/* LCD's */
+@media screen and (min-width:2000px){
+  #navbar-container .logo::after{
+  font-size: 2.5em;
+  }
+  #navbar-container .lilinks-container ul a li{
+    font-size: 1.2em;
+  }
+  #main-container .main-img img{
+    width: 50em;
+  }
+  #main-container .main-content h1{
+    font-size: 6em;
+  }
+  #main-container .main-content .txt{
+    font-size: 2em;
+  }
+   #main-container .main-content .sociallinks-container .social-links i{
+     padding-left: .5em;
+    font-size: 3.2em;
+  }
+  #about-container .about-content{
+    width: 50%;
+  }
+  #about-container .about-content h1{
+    font-size: 6em;
+  }
+  #about-container .about-content p{
+    font-size: 2em;
+    
+  }
+   #about-container .about-img img{
+     width: 30em;
+     height: 30em;
+   }
+}
+/* 4K */
+@media screen and (min-width:2560px){
+  #navbar-container .logo::after{
+  font-size: 3.5em;
+  }
+  #navbar-container .lilinks-container ul{
+    left: 40%;
+  }
+  #navbar-container .lilinks-container ul a li{
+    font-size: 2em;
+  }
+  #main-container .main-img img{
+    width: 60em;
+  }
+  #main-container .main-content h1{
+    font-size: 7em;
+  }
+   #main-container .main-content .sociallinks-container .social-links i{
+     padding-left: .7em;
+    font-size: 3.5em;
+  }
+  #about-container .about-content{
+    width: 40%;
+  }
+  #about-container .about-content h1{
+    font-size: 7em;
+  }
+  #about-container .about-content p{
+    font-size: 2em;
+    
+  }
+   #about-container .about-img img{
+     width: 30em;
+     height: 30em;
+   }
+}

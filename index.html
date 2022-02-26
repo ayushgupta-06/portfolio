@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsive.css" />
     <title>Ayush Gupta</title>
   </head>
   <body>
@@ -15,21 +16,58 @@
         <div class="hamburger-menu-line" id="hamburger-menu-line-1"></div>
         <div class="hamburger-menu-line" id="hamburger-menu-line-2"></div>
       </div>
+      <div class="lilinks-container">
+        <ul>
+          <a href="#main-container"><li>HOME</li></a>
+          <a href="#about-container"><li>ABOUT</li></a>
+          <a href=""><li>SKILLS</li></a>
+          <a href=""><li>PROJECTS</li></a>
+          <a href=""><li>SOCIALS</li></a>
+        </ul>
+      </div>
     </nav>
     <div id="main-container">
       <div class="main-content">
-        <h1>
-          HI I am
-          Ayush Gupta
-        </h1>
+        <h1>HI I am Ayush Gupta</h1>
+        <span
+          class="txt"
+          data-wait="2000"
+          data-words='["A Web Developer","A Freelancer","Learning Full-stack Development"]'
+        ></span>
         <a href="#">Contact</a>
+        <div class="sociallinks-container">
+          <div class="social-links">
+            <a href="https://www.instagram.com/ayushgupta__06/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+           </a>
+          </div>
+          <div class="social-links">
+            <a href="https://twitter.com/ayushgupta__06" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ayush-gupta-65674522a/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ayushgupta-06" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="social-links">
+            <a href="mailto:ayushgupta2k7@gmailcom" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="main-img">
-        <img src="src/images/main-bg.png" alt="Background" />
+        <img src="src/images/main-bg.svg" alt="Background">
       </div>
     </div>
     <div id="about-container">
-
       <div class="about-content">
         <h1>About</h1>
         <p>
@@ -40,7 +78,14 @@
           am currently on my path to achieve it.
         </p>
       </div>
+      <div class="about-img">
+        <img src="src/images/about-bg.png" alt="Background">
+      </div>
     </div>
     <script src="src/javascript/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/26d864bdff.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

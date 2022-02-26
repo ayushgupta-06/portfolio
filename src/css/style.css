@@ -50,9 +50,12 @@ body {
   font-size: 1.5em;
   color: #23b5b5;
   font-family: "AmsterdamSign";
+  -webkit-animation: logoanime 1s ease-in;
+          animation: logoanime 1s ease-in;
 }
 
 #navbar-container .hamburger-menu {
+  cursor: pointer;
   border-radius: 2px;
   background-color: #23b5b5;
   width: 3em;
@@ -60,6 +63,8 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding: 0px 5px;
+  -webkit-animation: hamburgeranime 1s ease-in;
+          animation: hamburgeranime 1s ease-in;
 }
 
 #navbar-container .hamburger-menu .hamburger-menu-line {
@@ -67,6 +72,12 @@ body {
   height: 0.1em;
   margin: 0.7em 0px;
   background-color: #f2f2f2;
+  -webkit-animation: hamburgerlineanime 1s ease-in;
+          animation: hamburgerlineanime 1s ease-in;
+}
+
+#navbar-container .lilinks-container {
+  display: none;
 }
 
 #main-container {
@@ -109,6 +120,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: mainh1anime 1s ease-in;
+          animation: mainh1anime 1s ease-in;
+}
+
+#main-container .main-content .txt {
+  display: none;
 }
 
 #main-container .main-content a {
@@ -118,6 +135,12 @@ body {
   color: #f2f2f2;
   border-radius: 2px;
   background-color: #23b5b5;
+  -webkit-animation: mainbuttonanime 1s ease-in;
+          animation: mainbuttonanime 1s ease-in;
+}
+
+#main-container .main-content .sociallinks-container {
+  display: none;
 }
 
 #main-container .main-img {
@@ -130,10 +153,12 @@ body {
 #main-container .main-img img {
   width: 100%;
   height: auto;
+  -webkit-animation: mainimganime 1s ease-in;
+          animation: mainimganime 1s ease-in;
 }
 
 #about-container {
-  width: 100%;
+  width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -166,4 +191,140 @@ body {
   text-align: center;
   color: #abacad;
   font-family: "Oxygen", sans-serif;
+}
+
+#about-container .about-img {
+  display: none;
+}
+
+/* Animations */
+@-webkit-keyframes logoanime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+@keyframes logoanime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes hamburgeranime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes hamburgeranime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes hamburgerlineanime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes hamburgerlineanime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes mainh1anime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes mainh1anime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes mainbuttonanime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes mainbuttonanime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes mainimganime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+
+@keyframes mainimganime {
+  from {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+  }
+  to {
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
 }
