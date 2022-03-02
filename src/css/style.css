@@ -49,8 +49,8 @@ body {
   font-size: 1.5em;
   color: #23b5b5;
   font-family: "AmsterdamSign";
-  -webkit-animation: logoanime 1s ease-in;
-          animation: logoanime 1s ease-in;
+  -webkit-animation: logoanime 1s ease-in, logoanime2 2s infinite, logoanime3 1s;
+          animation: logoanime 1s ease-in, logoanime2 2s infinite, logoanime3 1s;
 }
 
 #navbar-container .hamburger-menu {
@@ -160,8 +160,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
-  top: 5em;
+  margin-top: 5em;
 }
 
 #about-container .about-content {
@@ -183,7 +182,7 @@ body {
 }
 
 #about-container .about-content p {
-  width: 98%;
+  width: 100%;
   font-size: 1em;
   letter-spacing: 0.1em;
   text-align: center;
@@ -196,8 +195,7 @@ body {
 }
 
 #skills-container {
-  position: relative;
-  top: 10em;
+  margin-top: 5em;
   width: 100vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -236,8 +234,8 @@ body {
 
 #skills-container .skills-content .skills h1 {
   color: #f2f2f2;
-  font-family: "Oxygen",sans-serif;
-  letter-spacing: .1em;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 0.1em;
   font-size: 1em;
 }
 
@@ -291,8 +289,9 @@ body {
 }
 
 #skills-container .skills-content .skills .skill-bar .skill-limit {
-  font-family: "Oxygen",sans-serif;
-  border-radius: 1em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  font-family: "Oxygen", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,8 +317,7 @@ body {
 }
 
 #projects-container {
-  position: relative;
-  top: 15em;
+  margin-top: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,7 +333,7 @@ body {
 
 #projects-container > h1 {
   text-align: center;
-  width: 100%;
+  width: 100vw;
   width: 100%;
   font-size: 2.5em;
   text-align: center;
@@ -360,14 +358,15 @@ body {
       justify-content: space-around;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  padding: .5em;
+  width: 100%;
+  padding: 0.5em;
   height: 80em;
 }
 
 #projects-container .projects .cards {
   width: 12em;
   height: 25em;
-  border-radius: .5em;
+  border-radius: 0.5em;
   background-color: #1a224d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,18 +383,20 @@ body {
 }
 
 #projects-container .projects .cards h1 {
+  font-family: "Oxygen", sans-serif;
   width: 100%;
   font-size: 1.5em;
   text-align: center;
-  padding-top: .5em;
+  padding-top: 0.5em;
   color: #f2f2f2;
 }
 
 #projects-container .projects .cards p {
   color: #f2f2f2b2;
   text-align: center;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 1em;
+  font-family: "Oxygen", sans-serif;
 }
 
 #projects-container .projects .cards a {
@@ -404,14 +405,12 @@ body {
   padding: 0.5em 1.5em;
   font-size: 1em;
   color: #f2f2f2;
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
   background-color: #23b5b5;
   cursor: pointer;
-}
-
-#projects-container .projects .cards a :hover {
-  background-color: #f2f2f2;
+  -webkit-box-shadow: 0px 0px 10px #23b5b5;
+          box-shadow: 0px 0px 10px #23b5b5;
 }
 
 /* Animations */
@@ -433,6 +432,30 @@ body {
   to {
     -webkit-filter: brightness(1);
             filter: brightness(1);
+  }
+}
+
+@-webkit-keyframes logoanime2 {
+  0% {
+    text-shadow: 0px 0px 5px #23b5b5;
+  }
+  50% {
+    text-shadow: 0px 0px 10px #23b5b5;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #23b5b5;
+  }
+}
+
+@keyframes logoanime2 {
+  0% {
+    text-shadow: 0px 0px 5px #23b5b5;
+  }
+  50% {
+    text-shadow: 0px 0px 10px #23b5b5;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #23b5b5;
   }
 }
 

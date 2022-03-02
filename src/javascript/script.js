@@ -4,6 +4,8 @@ hamBurger.addEventListener("click", hamBurgerFunc);
 let hamBurgerLine = document.querySelectorAll(".hamburger-menu-line");
 let navBar = document.querySelector("#navbar-container");
 
+let body = document.querySelector("body");
+
 let logo = document.querySelector(".logo");
 function hamBurgerFunc() {
   if (logo.style.display != "none") {
@@ -164,9 +166,8 @@ class TypeWriter {
     this.wait = parseInt(wait, 10);
     this.type();
     this.isDeleting = false;
-    
   }
-  
+
   type() {
     // Current index of word
     const current = this.wordIndex % this.words.length;

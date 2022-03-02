@@ -3,58 +3,57 @@
   #navbar-container .logo::after {
     content: "Ayush Gupta";
   }
-  @keyframes logoanime {
-    0%{
-content: '';
+  @keyframes logoanime3 {
+    0% {
+      content: "";
     }
-     10%{
-      content: 'Ay';
+    10% {
+      content: "Ay";
     }
-     20%{
-      content: 'Ay';
+    20% {
+      content: "Ay";
     }
-     30%{
-      content: 'Ayu';
+    30% {
+      content: "Ayu";
     }
-     40%{
-      content: 'Ayus';
+    40% {
+      content: "Ayus";
     }
-     50%{
-      content: 'Ayush';
+    50% {
+      content: "Ayush";
     }
-     60%{
-      content: 'Ayush G';
+    60% {
+      content: "Ayush G";
     }
-     70%{
-      content: 'Ayush Gu';
+    70% {
+      content: "Ayush Gu";
     }
-     80%{
-      content: 'Ayush Gup';
+    80% {
+      content: "Ayush Gup";
     }
-     90%{
-      content: 'Ayush Gupt';
+    90% {
+      content: "Ayush Gupt";
     }
-     100%{
-      content: 'Ayush Gupta';
+    100% {
+      content: "Ayush Gupta";
     }
-
   }
-    #main-container .main-content h1 {
+  #main-container .main-content h1 {
     width: 10em;
   }
-    #main-container .main-content .txt {
+  #main-container .main-content .txt {
     font-size: 1.1em;
     color: #abacad;
     font-family: "Oxygen", sans-serif;
     display: inline-block;
   }
-  #main-container .main-img img{
+  #main-container .main-img img {
     width: 95vw;
   }
-  #main-container .main-content a{
+  #main-container .main-content a {
     display: none;
   }
-    #main-container .main-content .sociallinks-container {
+  #main-container .main-content .sociallinks-container {
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -62,9 +61,9 @@ content: '';
   }
   #main-container .main-content .sociallinks-container .social-links {
     cursor: pointer;
-    padding: .5em;
+    padding: 0.5em;
   }
-  #main-container .main-content .sociallinks-container .social-links a{
+  #main-container .main-content .sociallinks-container .social-links a {
     font-family: "Oxygen", sans-serif;
     padding: 0px 0px;
     background-color: transparent;
@@ -136,7 +135,7 @@ content: '';
     color: #c5221f;
     box-shadow: 0px 0px 50px #c5221f;
   }
-  #projects-container .projects .cards{
+  #projects-container .projects .cards {
     width: 15em;
   }
 }
@@ -145,8 +144,14 @@ content: '';
   #main-container .main-content .txt {
     font-size: 1.2em;
   }
-  #projects-container .projects .cards{
+  #projects-container .projects .cards {
     height: 20em;
+  }
+}
+/* Small Tabs */
+@media screen and (min-width: 600px) {
+  #projects-container .projects {
+    height: 50em;
   }
 }
 /* Tablet */
@@ -154,11 +159,11 @@ content: '';
   #navbar-container {
     justify-content: center !important;
   }
-  #navbar-container .logo::after{
+  #navbar-container .logo::after {
     font-size: 1.5em;
   }
   #navbar-container .hamburger-menu {
-    visibility: hidden;
+    display: none;
   }
   #navbar-container .lilinks-container {
     display: block;
@@ -176,7 +181,7 @@ content: '';
   #navbar-container .lilinks-container a li {
     transition: transform 0.5s;
     padding: 1em;
-    font-size: .7em;
+    font-size: 0.7em;
     font-weight: 600;
   }
   #navbar-container .lilinks-container a li:hover {
@@ -205,92 +210,7 @@ content: '';
     padding: 0.5em 0px 0.5em 0.5em;
     font-size: 1.2em;
   }
-  #main-container .main-content a {
-    display: none;
-  }
-  /* #main-container .main-content .sociallinks-container {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    padding: 1em;
-  }
-  #main-container .main-content .sociallinks-container .social-links {
-    cursor: pointer;
-    padding: 1em;
-  }
-  #main-container .main-content .sociallinks-container .social-links a{
-    font-family: "Oxygen", sans-serif;
-    padding: 0px 0px;
-    background-color: transparent;
-    display: block;
-  }
-  #main-container .main-content .sociallinks-container .social-links i {
-    border-radius: 40px;
-    padding: 0.5em;
-    color: #abacad;
-    font-size: 1.5em;
-    transition: all 1s;
-    animation: sociallinksanime 1s ease-in;
-  }
-  @keyframes sociallinksanime {
-    from {
-      filter: brightness(50%);
-    }
-    to {
-      filter: brightness(1);
-    }
-  }
-  #main-container
-    .main-content
-    .sociallinks-container
-    .social-links
-    .fa-instagram:hover {
-    background-color: #abacad;
-    border: 1px solid #d822a8;
-    color: #d822a8;
-    box-shadow: 0px 0px 50px #d822a8;
-  }
-  #main-container
-    .main-content
-    .sociallinks-container
-    .social-links
-    .fa-twitter:hover {
-    background-color: #abacad;
-    border: 1px solid #5da9dd;
-    color: #5da9dd;
-    box-shadow: 0px 0px 50px #5da9dd;
-  }
-  #main-container
-    .main-content
-    .sociallinks-container
-    .social-links
-    .fa-linkedin-in:hover {
-    background-color: #abacad;
-    border: 1px solid #0077b5;
-    color: #0077b5;
-    box-shadow: 0px 0px 50px #0077b5;
-  }
-  #main-container
-    .main-content
-    .sociallinks-container
-    .social-links
-    .fa-github:hover {
-    background-color: #abacad;
-    border: 1px solid #1b1f23;
-    color: #1b1f23;
-    box-shadow: 0px 0px 50px #abacad;
-  }
-  #main-container
-    .main-content
-    .sociallinks-container
-    .social-links
-    .fa-envelope:hover {
-    background-color: #abacad;
-    border: 1px solid #c5221f;
-    color: #c5221f;
-    box-shadow: 0px 0px 50px #c5221f;
-  } */
-  #main-container .main-img img{
+  #main-container .main-img img {
     width: 25em;
     position: relative;
     right: 1em;
@@ -321,35 +241,40 @@ content: '';
     width: 15em;
     height: 15em;
   }
-  #skills-container{
+  #skills-container {
     width: 100vw;
     display: flex !important;
-    /* border: 1px solid green; */
-    /* flex-direction: row; */
   }
-  #skills-container .skills-content > h1{
+  #skills-container .skills-content > h1 {
     width: 100%;
-    padding: 1em 0px;
-    /* border: 1px solid red; */
+    padding: 1em;
+    text-align: left;
   }
-  #skills-container .skills-content{
-    /* border: 1px solid white; */
+  #skills-container .skills-content {
     width: 50%;
   }
-  #skills-container .skills-content .skills{
+  #skills-container .skills-content .skills {
     padding: 1em;
     width: 90%;
-    /* border: 1px solid white; */
     align-items: flex-start;
   }
-  #skills-container .skills-img{
+  #skills-container .skills-img {
     display: flex;
     align-items: flex-end;
-  /* display: block; */
   }
-  #skills-container .skills-img img{
-      width: 30em;
-  height: auto;
+  #skills-container .skills-img img {
+    width: 30em;
+    height: auto;
+  }
+  #projects-container .projects {
+    height: 30em;
+  }
+  #projects-container .projects .cards {
+    transition: transform 0.5s;
+  }
+
+  #projects-container .projects .cards:hover {
+    transform: translateY(-20px);
   }
 }
 /* Laptops*/
@@ -357,7 +282,7 @@ content: '';
   #navbar-container {
     justify-content: flex-start !important;
   }
-  #navbar-container .logo::after{
+  #navbar-container .logo::after {
     position: relative;
     left: 1.5em;
   }
@@ -367,153 +292,179 @@ content: '';
   }
 }
 /* Laptop L*/
-@media screen and (min-width:1326px) {
-  
-  #navbar-container .logo::after{
+@media screen and (min-width: 1326px) {
+  #navbar-container .logo::after {
     position: relative;
     left: 2em;
-  font-size: 1.5em;
-  }
-  #navbar-container .lilinks-container ul{
-    left: 90%;
-  }
-  #navbar-container .lilinks-container ul a li{
-    font-weight: 600;
-    font-size: .8em;
-  }
-  #main-container .main-content h1{
-    font-size: 4em;
-  }
-  #main-container .main-content .txt{
     font-size: 1.5em;
   }
-   #main-container .main-content .sociallinks-container .social-links i{
-    font-size: 2em;
+  #navbar-container .lilinks-container ul {
+    left: 90%;
   }
-  #main-container .main-img img{
-    width: 35em;
+  #navbar-container .lilinks-container ul a li {
+    font-weight: 600;
+    font-size: 0.8em;
   }
-  #about-container .about-content{
-    width: 40%;
-  }
-  #about-container .about-content h1{
+  #main-container .main-content h1 {
     font-size: 4em;
   }
-  #about-container .about-content p{
-    font-size: 1.3em;
-    
+  #main-container .main-content .txt {
+    font-size: 1.5em;
   }
-   #about-container .about-img img{
-     width: 25em;
-     height: 25em;
-    }
-    /* #skills-container{
-      border: 1px solid goldenrod;
-    } */
-    #skills-container .skills-content .skills h1{
-      font-size: 1.3em;
-      padding: 5px;
-    }
-     #skills-container .skills-content > h1{
-       /* border: 1px solid red; */
-       text-align: left;
-       font-size: 4em;
-       height: fit-content;
-       width: 95%;
-       padding-left: .5em;
-     }
-    #skills-container .skills-img{
-      justify-content: center;
-    }
-   #skills-container .skills-img img{
-     width: 35em;
-   }
-}
-/* LCD's */
-@media screen and (min-width:2000px){
-  #navbar-container .logo::after{
-  font-size: 2.5em;
-  }
-  #navbar-container .lilinks-container ul a li{
-    font-size: 1.2em;
-  }
-  #main-container .main-img img{
-    width: 50em;
-  }
-  #main-container .main-content h1{
-    font-size: 6em;
-  }
-  #main-container .main-content .txt{
+  #main-container .main-content .sociallinks-container .social-links i {
     font-size: 2em;
   }
-   #main-container .main-content .sociallinks-container .social-links i{
-     padding-left: .5em;
-    font-size: 3.2em;
+  #main-container .main-img img {
+    width: 35em;
   }
-  #about-container .about-content{
-    width: 50%;
-  }
-  #about-container .about-content h1{
-    font-size: 6em;
-  }
-  #about-container .about-content p{
-    font-size: 2em;
-    
-  }
-   #about-container .about-img img{
-     width: 30em;
-     height: 30em;
-   }
-   #skills-container .skills-content h1{
-     font-size: 6em;
-   }
-   #skills-container .skills-content .skills h1{
-     font-size: 2.5em;
-   }
-    #skills-container .skills-content{
-      position: relative;
-      left: 4em;
-    }
-    #skills-container .skills-img img{
-      width: 55em;
-    }
-}
-/* 4K */
-@media screen and (min-width:2560px){
-  #navbar-container .logo::after{
-  font-size: 3.5em;
-  }
-  #navbar-container .lilinks-container ul{
-    left: 70%;
-  }
-  #navbar-container .lilinks-container ul a li{
-    font-size: 1.7em;
-  }
-  #main-container .main-img img{
-    width: 60em;
-  }
-  #main-container .main-content h1{
-    font-size: 7em;
-  }
-   #main-container .main-content .sociallinks-container .social-links i{
-     padding-left: .7em;
-    font-size: 3.5em;
-  }
-  #about-container .about-content{
+  #about-container .about-content {
     width: 40%;
   }
-  #about-container .about-content h1{
+  #about-container .about-content h1 {
+    font-size: 4em;
+  }
+  #about-container .about-content p {
+    font-size: 1.3em;
+  }
+  #about-container .about-img img {
+    width: 25em;
+    height: 25em;
+  }
+  #skills-container .skills-content .skills h1 {
+    font-size: 1.3em;
+    padding: 5px;
+  }
+  #skills-container .skills-content > h1 {
+    text-align: left;
+    font-size: 4em;
+    height: fit-content;
+    width: 95%;
+    padding-left: 0.5em;
+  }
+  #skills-container .skills-img {
+    justify-content: center;
+  }
+  #skills-container .skills-img img {
+    width: 35em;
+  }
+}
+/* LCD's */
+@media screen and (min-width: 2000px) {
+  #navbar-container .logo::after {
+    font-size: 2.5em;
+  }
+  #navbar-container .lilinks-container ul a li {
+    font-size: 1.2em;
+  }
+  #main-container .main-img img {
+    width: 50em;
+  }
+  #main-container .main-content h1 {
+    font-size: 6em;
+  }
+  #main-container .main-content .txt {
+    font-size: 2em;
+  }
+  #main-container .main-content .sociallinks-container .social-links i {
+    padding-left: 0.5em;
+    font-size: 3.2em;
+  }
+  #about-container .about-content {
+    width: 50%;
+  }
+  #about-container .about-content h1 {
+    font-size: 6em;
+  }
+  #about-container .about-content p {
+    font-size: 2em;
+  }
+  #about-container .about-img img {
+    width: 30em;
+    height: 30em;
+  }
+  #skills-container .skills-content h1 {
+    font-size: 6em;
+  }
+  #skills-container .skills-content .skills h1 {
+    font-size: 2.5em;
+  }
+  #skills-container .skills-content {
+    position: relative;
+    left: 4em;
+  }
+  #skills-container .skills-img img {
+    width: 55em;
+  }
+  #skills-container .skills-content .skills .skill-limit {
+    font-size: 1.5em;
+  }
+  #projects-container > h1 {
+    font-size: 5em;
+  }
+  #projects-container .projects .cards {
+    width: 20em;
+    height: 27em;
+  }
+  #projects-container .projects .cards h1 {
+    font-size: 2em;
+  }
+  #projects-container .projects .cards p {
+    font-size: 1.4em;
+  }
+  #projects-container .projects .cards a {
+    font-size: 1.4em;
+  }
+}
+/* 4K */
+@media screen and (min-width: 2560px) {
+  #navbar-container .logo::after {
+    font-size: 3.5em;
+  }
+  #navbar-container .lilinks-container ul {
+    left: 70%;
+  }
+  #navbar-container .lilinks-container ul a li {
+    font-size: 1.7em;
+  }
+  #main-container .main-img img {
+    width: 60em;
+  }
+  #main-container .main-content h1 {
     font-size: 7em;
   }
-  #about-container .about-content p{
-    font-size: 2em;
-    
+  #main-container .main-content .sociallinks-container .social-links i {
+    padding-left: 0.7em;
+    font-size: 3.5em;
   }
-   #about-container .about-img img{
-     width: 30em;
-     height: 30em;
-   }
-     #skills-container .skills-img img{
-      width: 65em;
-    }
+  #about-container .about-content {
+    width: 40%;
+  }
+  #about-container .about-content h1 {
+    font-size: 7em;
+    padding-left: 0.3em;
+  }
+  #about-container .about-content p {
+    font-size: 2em;
+    padding-left: 1em;
+  }
+  #about-container .about-img img {
+    width: 30em;
+    height: 30em;
+  }
+  #skills-container .skills-img img {
+    width: 65em;
+  }
+  #projects-container .projects .cards {
+    width: 25em;
+    height: 30em;
+  }
+  #projects-container .projects .cards h1 {
+    font-size: 2.5em;
+  }
+  #projects-container .projects .cards p {
+    font-size: 1.7em;
+  }
+  #projects-container .projects .cards a {
+    font-size: 1.7em;
+  }
 }

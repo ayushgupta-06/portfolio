@@ -33,13 +33,12 @@ body {
     font-size: 1.5em;
     color: #23b5b5;
     font-family: "AmsterdamSign";
-    animation: logoanime 1s ease-in;
+    animation: logoanime 1s ease-in, logoanime2 2s infinite, logoanime3 1s;
   }
 
   .hamburger-menu {
     cursor: pointer;
     border-radius: 2px;
-    // background-color: #23b5b5;
     width: 3em;
     height: fit-content;
     padding: 0px 5px;
@@ -109,8 +108,7 @@ body {
 #about-container {
   width: 100vw;
   height: fit-content;
-  position: relative;
-  top: 5em;
+  margin-top: 5em;
   .about-content {
     width: 100%;
     height: fit-content;
@@ -125,7 +123,7 @@ body {
       -webkit-text-fill-color: transparent;
     }
     p {
-      width: 98%;
+      width: 100%;
       font-size: 1em;
       letter-spacing: 0.1em;
       text-align: center;
@@ -138,14 +136,11 @@ body {
   }
 }
 #skills-container {
-  // border: 1px solid white;
-  position: relative;
-  top: 10em;
+  margin-top: 5em;
   width: 100vw;
   height: fit-content;
   .skills-content {
     text-align: center;
-    // border: 1px solid salmon;
     > h1 {
       padding: 1em 0px;
       width: 100%;
@@ -162,85 +157,52 @@ body {
       flex-direction: column;
       align-items: center;
       width: 100vw;
-      // border: 1px solid blue;
-      h1{
+      h1 {
         color: #f2f2f2;
-        font-family: "Oxygen",sans-serif;
-        letter-spacing: .1em;
+        font-family: "Oxygen", sans-serif;
+        letter-spacing: 0.1em;
         font-size: 1em;
       }
-      // #html-h1 {
-      //   color: #dd4b25;
-      // }
-      // #css-h1 {
-      //   color: #254bdd;
-      // }
-      // #javascript-h1 {
-      //   color: #edd718;
-      // }
-      // #bootstrap-h1 {
-      //   color: #7010ef;
-      // }
-      // #tailwind-h1 {
-      //   color: #36b7f0;
-      // }
-      // #sass-h1 {
-      //   color: #c76494;
-      // }
       .skill-bar {
-        // border: 1px solid white;
         width: 95%;
         height: 1.3em;
         border-radius: 1em;
         background-color: #f2f2f2;
 
         #skill-limit-1 {
-          // background-color: #dd4b25;
           width: 90%;
           height: 100%;
-          // box-shadow: 0px 0px 10px #dd4b25;
           animation: skilllimit1anime 1s ease-in;
         }
         #skill-limit-2 {
-          // background-color: #254bdd;
           width: 80%;
           height: 100%;
-          // box-shadow: 0px 0px 10px #254bdd;
           animation: skilllimit2anime 1s ease-in;
         }
         #skill-limit-3 {
-          // background-color: #edd718;
           width: 60%;
           height: 100%;
-          // box-shadow: 0px 0px 10px #edd718;
           animation: skilllimit3anime 1s ease-in;
         }
         #skill-limit-4 {
-          // background-color: #7010ef;
           width: 40%;
           height: 100%;
-          // box-shadow: 0px 0px 10px #7010ef;
           animation: skilllimit4anime 1s ease-in;
         }
         #skill-limit-5 {
-          // background-color: #36b7f0;
           width: 75%;
           height: 100%;
-          // box-shadow: 0px 0px 10px #36b7f0;
           animation: skilllimit5anime 1s ease-in;
         }
         #skill-limit-6 {
-          // background-color: #c76494;
           width: 80%;
           height: 100%;
-          // box-shadow: 0px 0px 10px #c76494;
           animation: skilllimit6anime 1s ease-in;
         }
         .skill-limit {
-          // border-top-left-radius: 1em;
-          // border-bottom-left-radius: 1em;
-          font-family: "Oxygen",sans-serif;
-          border-radius: 1em;
+          border-top-left-radius: 1em;
+          border-bottom-left-radius: 1em;
+          font-family: "Oxygen", sans-serif;
           display: flex;
           flex-direction: column;
           align-items: flex-end;
@@ -253,23 +215,20 @@ body {
       }
     }
   }
-  .skills-img{
+  .skills-img {
     display: none;
   }
 }
 
 #projects-container {
-  // @include border(red);
-  position: relative;
-  top: 15em;
+  margin-top: 5em;
   display: flex;
   flex-direction: column;
   width: 100vw;
   height: fit-content;
-  >h1 {
-    // @include border(white);
+  > h1 {
     text-align: center;
-    width: 100%;
+    width: 100vw;
     width: 100%;
     font-size: 2.5em;
     text-align: center;
@@ -279,54 +238,52 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .projects{
-    // @include border(green);
+  .projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-    // width: 100%;
-    padding: .5em;
+    width: 100%;
+    padding: 0.5em;
     height: 80em;
-    .cards{
+    .cards {
       width: 12em;
       height: 25em;
-      border-radius: .5em;
+      border-radius: 0.5em;
       background-color: #1a224d;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       box-shadow: 0px 0px 5px #1a224d;
-          h1{
-      width: 100%;
-      font-size: 1.5em;
-      text-align: center;
-      padding-top: .5em;
-      // color: rgb(243, 231, 231);
-      color: #f2f2f2;
-    }
-    p{
-      color: #f2f2f2b2;
-      text-align: center;
-      padding: .5em;
-      font-size: 1em;
-    }
-    a{
-      text-align: center;
-      font-family: "Oxygen", sans-serif;
-      padding: 0.5em 1.5em;
-      font-size: 1em;
-      color: #f2f2f2;
-      border-bottom-left-radius: .5em;
-      border-bottom-right-radius: .5em;
-      background-color: #23b5b5;
-      
-      cursor: pointer;
-      :hover{
-        background-color: #f2f2f2;
+
+      h1 {
+        font-family: "Oxygen", sans-serif;
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+        padding-top: 0.5em;
+        color: #f2f2f2;
       }
-    }
+      p {
+        color: #f2f2f2b2;
+        text-align: center;
+        padding: 0.5em;
+        font-size: 1em;
+        font-family: "Oxygen", sans-serif;
+      }
+      a {
+        text-align: center;
+        font-family: "Oxygen", sans-serif;
+        padding: 0.5em 1.5em;
+        font-size: 1em;
+        color: #f2f2f2;
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+        background-color: #23b5b5;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px #23b5b5;
+      }
     }
   }
 }
@@ -338,6 +295,17 @@ body {
   }
   to {
     filter: brightness(1);
+  }
+}
+@keyframes logoanime2 {
+  0% {
+    text-shadow: 0px 0px 5px #23b5b5;
+  }
+  50% {
+    text-shadow: 0px 0px 10px #23b5b5;
+  }
+  100% {
+    text-shadow: 0px 0px 5px #23b5b5;
   }
 }
 @keyframes hamburgeranime {
