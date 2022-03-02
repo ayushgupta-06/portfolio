@@ -3,17 +3,150 @@
   #navbar-container .logo::after {
     content: "Ayush Gupta";
   }
-}
-/* Medium Phones */
-@media screen and (min-width: 375px) {
-  #main-container .main-content h1 {
+  @keyframes logoanime {
+    0%{
+content: '';
+    }
+     10%{
+      content: 'Ay';
+    }
+     20%{
+      content: 'Ay';
+    }
+     30%{
+      content: 'Ayu';
+    }
+     40%{
+      content: 'Ayus';
+    }
+     50%{
+      content: 'Ayush';
+    }
+     60%{
+      content: 'Ayush G';
+    }
+     70%{
+      content: 'Ayush Gu';
+    }
+     80%{
+      content: 'Ayush Gup';
+    }
+     90%{
+      content: 'Ayush Gupt';
+    }
+     100%{
+      content: 'Ayush Gupta';
+    }
+
+  }
+    #main-container .main-content h1 {
     width: 10em;
   }
-  #main-container .main-content .txt {
-    font-size: 1.2em;
+    #main-container .main-content .txt {
+    font-size: 1.1em;
     color: #abacad;
     font-family: "Oxygen", sans-serif;
     display: inline-block;
+  }
+  #main-container .main-img img{
+    width: 95vw;
+  }
+  #main-container .main-content a{
+    display: none;
+  }
+    #main-container .main-content .sociallinks-container {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em;
+  }
+  #main-container .main-content .sociallinks-container .social-links {
+    cursor: pointer;
+    padding: .5em;
+  }
+  #main-container .main-content .sociallinks-container .social-links a{
+    font-family: "Oxygen", sans-serif;
+    padding: 0px 0px;
+    background-color: transparent;
+    display: block;
+  }
+  #main-container .main-content .sociallinks-container .social-links i {
+    border-radius: 40px;
+    padding: 0.5em;
+    color: #abacad;
+    font-size: 1.5em;
+    transition: all 1s;
+    animation: sociallinksanime 1s ease-in;
+  }
+  @keyframes sociallinksanime {
+    from {
+      filter: brightness(50%);
+    }
+    to {
+      filter: brightness(1);
+    }
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-instagram:hover {
+    background-color: #abacad;
+    border: 1px solid #d822a8;
+    color: #d822a8;
+    box-shadow: 0px 0px 50px #d822a8;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-twitter:hover {
+    background-color: #abacad;
+    border: 1px solid #5da9dd;
+    color: #5da9dd;
+    box-shadow: 0px 0px 50px #5da9dd;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-linkedin-in:hover {
+    background-color: #abacad;
+    border: 1px solid #0077b5;
+    color: #0077b5;
+    box-shadow: 0px 0px 50px #0077b5;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-github:hover {
+    background-color: #abacad;
+    border: 1px solid #1b1f23;
+    color: #1b1f23;
+    box-shadow: 0px 0px 50px #abacad;
+  }
+  #main-container
+    .main-content
+    .sociallinks-container
+    .social-links
+    .fa-envelope:hover {
+    background-color: #abacad;
+    border: 1px solid #c5221f;
+    color: #c5221f;
+    box-shadow: 0px 0px 50px #c5221f;
+  }
+  #projects-container .projects .cards{
+    width: 15em;
+  }
+}
+/* Medium Phones */
+@media screen and (min-width: 375px) {
+  #main-container .main-content .txt {
+    font-size: 1.2em;
+  }
+  #projects-container .projects .cards{
+    height: 20em;
   }
 }
 /* Tablet */
@@ -75,7 +208,7 @@
   #main-container .main-content a {
     display: none;
   }
-  #main-container .main-content .sociallinks-container {
+  /* #main-container .main-content .sociallinks-container {
     display: flex;
     width: fit-content;
     height: fit-content;
@@ -156,7 +289,7 @@
     border: 1px solid #c5221f;
     color: #c5221f;
     box-shadow: 0px 0px 50px #c5221f;
-  }
+  } */
   #main-container .main-img img{
     width: 25em;
     position: relative;

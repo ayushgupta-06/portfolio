@@ -46,8 +46,8 @@ function hamBurgerFunc() {
     let aTag5 = document.createElement("a");
     aTag1.setAttribute("href", "#main-container");
     aTag2.setAttribute("href", "#about-container");
-    aTag3.setAttribute("href", "#");
-    aTag4.setAttribute("href", "#");
+    aTag3.setAttribute("href", "#skills-container");
+    aTag4.setAttribute("href", "#projects-container");
     aTag5.setAttribute("href", "#");
     ul.appendChild(aTag1);
     ul.appendChild(aTag2);
@@ -88,7 +88,7 @@ function hamBurgerFunc() {
     ul.style.position = "relative";
     // li styling
     for (let k = 0; k < li.length; k++) {
-      li[k].style.width = "100%";
+      li[k].style.width = "95%";
       li[k].style.height = "20px";
       li[k].style.padding = "5px";
       li[k].style.color = "#f2f2f2";
@@ -111,20 +111,20 @@ function hamBurgerFunc() {
         //navbar
         navBar.style.display = "flex";
         navBar.style.alignItems = "center";
-        navBar.style.justifyContent = "space-between";
+        navBar.style.justifyContent = "space-center";
         navBar.style.height = "15vh";
         navBar.style.backgroundColor = "#0c112b";
         //hamburger
         hamBurger.style.position = "static";
         hamBurger.style.width = "3em";
         hamBurger.style.display = "block";
-        hamBurger.style.backgroundColor = "#23b5b5";
+        hamBurger.style.backgroundColor = "0c112b";
         //hamburger line
         for (let i = 0; i < hamBurgerLine.length; i++) {
           hamBurgerLine[i].style.display = "block";
           hamBurgerLine[i].style.position = "static";
           hamBurgerLine[i].style.transform = "rotate(0deg)";
-          hamBurgerLine[i].style.backgroundColor = "#f2f2f2";
+          hamBurgerLine[i].style.backgroundColor = "#23b5b5";
         }
         navBar.lastChild.remove();
       }
@@ -135,20 +135,19 @@ function hamBurgerFunc() {
     //navbar
     navBar.style.display = "flex";
     navBar.style.alignItems = "center";
-    navBar.style.justifyContent = "space-between";
+    navBar.style.justifyContent = "space-around";
     navBar.style.height = "15vh";
     navBar.style.backgroundColor = "#0c112b";
     //hamburger
     hamBurger.style.position = "static";
     hamBurger.style.width = "3em";
     hamBurger.style.display = "block";
-    hamBurger.style.backgroundColor = "#23b5b5";
     //hamburger line
     for (let i = 0; i < hamBurgerLine.length; i++) {
       hamBurgerLine[i].style.display = "block";
       hamBurgerLine[i].style.position = "static";
       hamBurgerLine[i].style.transform = "rotate(0deg)";
-      hamBurgerLine[i].style.backgroundColor = "#f2f2f2";
+      hamBurgerLine[i].style.backgroundColor = "#23b5b5";
     }
     navBar.lastChild.remove();
   }
